@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-wave{0%,100%{height:4px;}50%{height:18px;}}@keyframes drift-particle{0%{transform:translateY(0px) rotate(0deg);opacity:0.3;}50%{transform:translateY(-18px) rotate(180deg);opacity:0.75;}100%{transform:translateY(0px) rotate(360deg);opacity:0.3;}}.wave-bar-1{animation:pulse-wave 1.1s ease-in-out infinite;}.wave-bar-2{animation:pulse-wave 0.85s ease-in-out infinite 0.15s;}.wave-bar-3{animation:pulse-wave 1.35s ease-in-out infinite 0.3s;}.wave-bar-4{animation:pulse-wave 0.95s ease-in-out infinite 0.45s;}.dust-particle-1{animation:drift-particle 12s ease-in-out infinite;}.dust-particle-2{animation:drift-particle 16s ease-in-out infinite 3s;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#111319","surface-container-lowest":"#0c0e14","outline-variant":"#524535","on-primary-container":"#704700","on-error-container":"#ffdad6","tertiary":"#ffd6b8","error-container":"#93000a","secondary-fixed":"#ffe088","on-secondary-fixed-variant":"#574500","outline":"#9f8e7c","tertiary-fixed":"#ffdcc3","tertiary-fixed-dim":"#ffb77d","surface-container-highest":"#33343c","surface-bright":"#373940","on-tertiary":"#4d2600","on-surface":"#e2e2eb","surface-variant":"#33343c","inverse-surface":"#e2e2eb","background":"#111319","on-secondary-container":"#342800","on-primary-fixed-variant":"#643f00","secondary":"#e9c349","surface-container-high":"#282a31","secondary-fixed-dim":"#e9c349","on-tertiary-fixed":"#2f1500","inverse-on-surface":"#2e3037","surface-container-low":"#191b22","surface-container":"#1d1f26","primary-fixed":"#ffddb6","on-background":"#e2e2eb","surface":"#111319","primary-container":"#ffb347","on-secondary":"#3c2f00","primary-fixed-dim":"#ffb95a","on-secondary-fixed":"#241a00","primary":"#ffd7a9","surface-tint":"#ffb95a","on-surface-variant":"#d6c3b0","on-primary-fixed":"#2a1800","error":"#ffb4ab","tertiary-container":"#ffb171","on-primary":"#462a00","secondary-container":"#af8d11","inverse-primary":"#845400","on-tertiary-container":"#7b4000","on-error":"#690005","on-tertiary-fixed-variant":"#6e3900"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"space-xl":"2.5rem",gutter:"1.5rem","margin-md":"2.5rem","space-lg":"1.5rem",margin:"1.25rem","margin-lg":"4rem","space-2xl":"4rem","gutter-lg":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"title-lg":["Syne"],"label-lg":["Manrope"],"headline-lg":["Syne"],"body-md":["Manrope"],"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"body-sm":["Manrope"],"body-lg":["Manrope"],"display-hero-mobile":["Syne"],"label-sm":["Manrope"],"display-hero":["Syne"],"headline-sm":["Syne"]},fontSize:{"title-lg":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"0.01em",fontWeight:"600"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.05em",fontWeight:"600"}],"headline-lg":["3.25rem",{lineHeight:"3.75rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0.01em",fontWeight:"400"}],"headline-md":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["2.125rem",{lineHeight:"2.5rem",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"400"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0.01em",fontWeight:"400"}],"display-hero-mobile":["2.75rem",{lineHeight:"3rem",letterSpacing:"-0.02em",fontWeight:"800"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.08em",fontWeight:"700"}],"display-hero":["5rem",{lineHeight:"5.25rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-sm":["1.5rem",{lineHeight:"2rem",letterSpacing:"0em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface relative selection:bg-primary-container selection:text-on-primary-container min-h-screen"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[650px] h-[650px] bg-primary/10 rounded-full blur-[140px]"></div><div class="absolute top-1/2 right-10 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[120px]"></div><div class="absolute top-24 left-1/3 w-1.5 h-1.5 rounded-full bg-primary-fixed opacity-70 blur-[0.5px] dust-particle-1"></div><div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-secondary-fixed opacity-60 blur-[0.5px] dust-particle-2"></div><div class="absolute bottom-1/4 left-16 w-1 h-1 rounded-full bg-primary opacity-50"></div><div class="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-tertiary opacity-45"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-dim/80 backdrop-blur-2xl shadow-[0_12px_40px_-10px_rgba(255,179,71,0.08)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high shadow-[0_0_20px_rgba(255,179,71,0.25)]"><span class="font-title-lg text-title-lg text-primary tracking-wider">E&amp;M</span></div><div class="hidden sm:flex flex-col"><span class="font-headline-sm text-body-sm tracking-widest uppercase text-primary">Celebrating Elena</span><span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">Milestone Gala Edition</span></div></div><nav class="hidden xl:flex items-center bg-surface-container/70 backdrop-blur-xl rounded-full p-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-full shadow-[0_0_24px_rgba(255,179,71,0.35)]"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebration" href="#">Celebration</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wish-wall" href="#">Wish Wall</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-full shadow-[0_0_24px_rgba(255,179,71,0.35)]" data-path="memory-gallery" href="#">Memory Gallery</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="creators-letter" href="#">Creator's Letter</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="surprise-gift" href="#">Surprise Gift</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low/90 backdrop-blur-md rounded-full px-space-sm py-1.5 shadow-[0_4px_16px_rgba(0,0,0,0.4)]"><button aria-label="Play or Pause Celebration Soundtrack" class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container hover:scale-105 transition-transform" type="button"><span class="material-symbols-outlined text-[18px]">play_arrow</span></button><div class="flex items-end gap-1 h-5 px-1.5"><span class="w-0.5 bg-primary rounded-full wave-bar-1"></span><span class="w-0.5 bg-primary-fixed rounded-full wave-bar-2"></span><span class="w-0.5 bg-secondary rounded-full wave-bar-3"></span><span class="w-0.5 bg-primary rounded-full wave-bar-4"></span></div><button aria-label="Mute Celebration Audio" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">volume_up</span></button></div><a aria-label="Admin Vault Lock" class="w-9 h-9 rounded-full bg-surface-container/60 hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-primary transition-all" data-path="admin-vault" href="#"><span class="material-symbols-outlined text-[19px]">lock</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(255,179,71,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative z-10 w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Atmospheric Ribbon & Curated Lead -->
+<section class="relative w-full max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg pt-space-lg pb-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high/70 backdrop-blur-md mb-space-sm shadow-[0_0_16px_rgba(255,179,71,0.15)]">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Curated Archive Vol. IV</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Memories That <span class="text-primary italic font-light">Make Us Smile</span>
+</h1>
+<p class="font-body-lg text-body-lg text-outline mt-space-xs max-w-xl">
+          A curated photographic journey through the milestones, quiet moments, and wild adventures shared with Elena.
+        </p>
+</div>
+<!-- Slideshow & Ambient Audio Strip -->
+<div class="flex items-center gap-space-sm flex-wrap self-start md:self-end">
+<button class="group flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_0_24px_rgba(255,179,71,0.35)] hover:scale-105 transition-all" id="slideshow-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Start Memories Slideshow</span>
+</button>
+<button aria-label="Toggle Film Grain Audio Track" class="flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-high hover:bg-surface-bright text-primary transition-colors shadow-md" id="grid-sound-toggle" type="button">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills Bar -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-md scrollbar-none mt-space-md">
+<button class="filter-pill active px-space-lg py-space-xs rounded-full font-label-lg text-label-lg transition-all bg-primary-container text-on-primary-container font-bold shadow-[0_0_18px_rgba(255,179,71,0.3)]" data-category="all">
+        All Moments (48)
+      </button>
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface bg-surface-container/60 backdrop-blur-md transition-all hover:bg-surface-container-high" data-category="adventures">
+        Adventures &amp; Trips
+      </button>
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface bg-surface-container/60 backdrop-blur-md transition-all hover:bg-surface-container-high" data-category="childhood">
+        Childhood Nostalgia
+      </button>
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface bg-surface-container/60 backdrop-blur-md transition-all hover:bg-surface-container-high" data-category="celebrations">
+        Celebrations
+      </button>
+<button class="filter-pill px-space-lg py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface bg-surface-container/60 backdrop-blur-md transition-all hover:bg-surface-container-high" data-category="silly">
+        Silly Moments
+      </button>
+</div>
+</section>
+<!-- Filmic Polaroid & Canvas Bento Grid -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg pb-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-start" id="gallery-grid">
+<!-- Photo 1: Sunset Sailing (Large Landscape Feature) -->
+<div class="gallery-card md:col-span-8 group relative rounded-xl bg-surface-container-lowest/80 p-space-sm shadow-[0_16px_40px_-10px_rgba(255,179,71,0.12)] hover:shadow-[0_24px_50px_rgba(255,179,71,0.25)] transition-all duration-500 cursor-pointer overflow-hidden" data-category="adventures" data-index="0">
+<div class="relative w-full h-[440px] md:h-[500px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Golden hour cinematography shot of Elena laughing on a wooden sailboat deck overlooking the pastel cliffside villas of Amalfi Coast Italy, sunflare casting a luminous amber glow across sea spray and warm windblown hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfJgZ86iodPPIYRoSciFt3UNO-fYwOW-Iu1-rRO1ZyXt6Sfkuqiz_qAP2d0Bh18L80KHsT61Ah6n5v-20jmH5i4YGX8ukmKmWXsKJ4nPXfFCv4_zqpAIYN_ffOosIe_ww8pfaY5BWFw-X1slqj9gnPTPLIatiCGrsRFtX6DRxjpR8vul8ha5S-Ho9PdPPxe2OtBH9Kuke2QuDs0Ru8nlkKxlKASW2PkmJTAkNDhJuv5HIBpvF6NwWW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-space-md left-space-md px-space-md py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[15px]">sailing</span>
+            Amalfi Coast, Italy
+          </div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-widest">Summer 2022</span>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Sunset sailing along the emerald cliffs
+              </h2>
+<p class="font-body-md text-body-md text-outline line-clamp-1 mt-0.5">
+                "Best summer of our lives. Sea breeze, limoncello, and non-stop acoustic serenades."
+              </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container/70 backdrop-blur-md px-space-md py-1.5 rounded-full shrink-0">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-title-lg text-label-sm flex items-center justify-center font-bold">J</div>
+<span class="font-label-sm text-label-sm text-on-surface">Julian M.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Photo 2: 90s Retro Birthday Cake (Vertical Polaroid Style) -->
+<div class="gallery-card md:col-span-4 group relative rounded-xl bg-surface-container-lowest/80 p-space-sm shadow-[0_16px_40px_-10px_rgba(255,179,71,0.12)] hover:shadow-[0_24px_50px_rgba(255,179,71,0.25)] transition-all duration-500 cursor-pointer overflow-hidden" data-category="childhood" data-index="1">
+<div class="relative w-full h-[440px] md:h-[500px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Nostalgic 1990s color film photograph of a four year old Elena with golden birthday crown and vanilla buttercream frosting completely smeared over her grinning cheeks, warm vintage tungsten indoor lighting and party balloons in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj3R27LuzniA8qlAm3FJ3MT8RrPBzhcPz0GaVG4Hc5YaZ5uHnpJ_L54YT8lmgGqmQjwcF-rFZ2O3lkEG9xeEF6n_wMtRSisZhgzbZLeYgkg3RWzgwnlnrL6X_W-UNT1IyoS8F079-LMH8P54iI6xRq0FQbPkwALYMIhun0dP4l9sXcR83cw5lHTvSQyEhohEtZPwrhS2JTqgYn9-3lUXUMjmR8GRlbTZo3hIpwE5BoS8SQdjQHFY55"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-85"></div>
+<div class="absolute top-space-md left-space-md px-space-md py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[15px]">cake</span>
+            Milestone Vault
+          </div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex flex-col justify-end">
+<span class="text-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest">October 1998</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary-fixed transition-colors">
+              Frosting everywhere &amp; zero regrets
+            </h2>
+<div class="flex items-center justify-between mt-space-xs pt-space-xs border-t-0">
+<span class="font-body-sm text-body-sm text-outline">Elena's 4th birthday bash</span>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">favorite</span>
+                Mom
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Photo 3: Spontaneous Coffee in Tokyo Rain (Atmospheric mood) -->
+<div class="gallery-card md:col-span-4 group relative rounded-xl bg-surface-container-lowest/80 p-space-sm shadow-[0_16px_40px_-10px_rgba(255,179,71,0.12)] hover:shadow-[0_24px_50px_rgba(255,179,71,0.25)] transition-all duration-500 cursor-pointer overflow-hidden" data-category="silly" data-index="3">
+<div class="relative w-full h-[400px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Atmospheric neon-lit midnight shot in Shibuya Tokyo during warm gentle rain, reflection of amber and magenta street lamps on wet pavement, Elena holding two steaming paper coffee cups laughing under a clear umbrella with friend" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-G9WHESGN-OZ_bw7rAzN8ggfPPN6Y8Mf8G4D6PDrZB6IsuGcbgGTDmGFvypO-aLFvX6LMZDjfS4IGcpt-zevPdl361wJj3lk6ObpgprswioncGmNY64_aQt6sZ8brEuaR4d0g2k0RH4zHr-gwKUeOqysGm4nQw6HCgnUS-0n60BS3eAwqqB7m9jcaOPrheT6kbgwTafTDHA-OoJgNKzM_ZwkIpW7aE_VReFT2oMRIhyyli_XLetIy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-85"></div>
+<div class="absolute top-space-md left-space-md px-space-md py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">coffee</span>
+            Midnight Shibuya
+          </div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<span class="text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-widest">November 2021</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">
+              Tokyo rain run at 1:00 AM
+            </h2>
+<div class="flex items-center justify-between mt-space-xs">
+<p class="font-body-sm text-body-sm text-outline truncate">"Lost without Google maps, saved by matcha lattes."</p>
+<span class="font-label-sm text-label-sm text-primary shrink-0 ml-2">By Chloe</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Photo 4: Graduation Day Celebration Confetti (Wide Festive) -->
+<div class="gallery-card md:col-span-8 group relative rounded-xl bg-surface-container-lowest/80 p-space-sm shadow-[0_16px_40px_-10px_rgba(255,179,71,0.12)] hover:shadow-[0_24px_50px_rgba(255,179,71,0.25)] transition-all duration-500 cursor-pointer overflow-hidden" data-category="celebrations" data-index="2">
+<div class="relative w-full h-[400px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Triumphant cinematic celebration photo of university graduation quad, golden yellow and white confetti explosion falling from above, Elena throwing mortarboard cap into mid-air surrounded by joyful friends in velvet ceremonial robes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzC09C_N58RS7oULw_xME-yVfrqPQWNYm66r2CAyF3V-OwlgVjTaVk8LJsKMi56EaB2Z394aVWKZau0lBdatSppayADhjN_d3EcruQXyu2qWXyg196SefK1P_5SwhLTpnS8roZAOaGfrJkP_amO8kxtQ1TTp7ReXIFE3XJX3XxqyTy0x5jZ8pW0WOLBB-Zu8VRRaS2a1EXRiFpz9e5HyGwVxb7HDwT-7Bphj7kfxuLk22LTUkRRHJV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-85"></div>
+<div class="absolute top-space-md left-space-md px-space-md py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">school</span>
+            Commencement Day
+          </div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest">Class of 2017</span>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                We actually made it through finals
+              </h2>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+                "Four years of 2 a.m. library study pods wrapped up in pure golden glitter."
+              </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container/70 backdrop-blur-md px-space-md py-1.5 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">groups</span>
+<span class="font-label-sm text-label-sm text-on-surface">The College Crew</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Photo 5: Family Thanksgiving Dinner Laughter -->
+<div class="gallery-card md:col-span-6 group relative rounded-xl bg-surface-container-lowest/80 p-space-sm shadow-[0_16px_40px_-10px_rgba(255,179,71,0.12)] hover:shadow-[0_24px_50px_rgba(255,179,71,0.25)] transition-all duration-500 cursor-pointer overflow-hidden" data-category="celebrations" data-index="4">
+<div class="relative w-full h-[360px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Candid intimate family dinner table bathed in soft glowing candlelight and rustic dinner plates, Elena in hearty unrestrained laughter across from her grandmother holding wine glasses in a cozy cedar home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp3G76a9E7-wd0shySpBt2gQLKFIWoKAd3EpZ3_vC9OdGHU3GRwjJXgpgBpsxJAXa0V4Y8kOCF7-WBr18ggSpPwyuH1_YqOk6JgIlHk8GrHcYb36i1mSE6iBVMHsGTTohc9VfLqz9P89iOUeTOFYUu_VElDmkww5Awgq1jdxR6RbSXPWNT84ESqwZtDJzEoK5VLYB4e0Wh5AAI9Zxd13kb4-0vYWVI3zCxaQePO5lg2tE1VPe7EuWj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-85"></div>
+<div class="absolute top-space-md left-space-md px-space-md py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">dinner_dining</span>
+            Thanksgiving Hearth
+          </div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<span class="text-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest">Autumn 2023</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">
+              The sweet potato pie debate
+            </h2>
+<div class="flex items-center justify-between mt-space-xs">
+<p class="font-body-sm text-body-sm text-outline truncate">"Laughing until everyone had tears in their eyes."</p>
+<span class="font-label-sm text-label-sm text-tertiary shrink-0 ml-2">Aunt Claire</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Photo 6: Hiking Mount Rainier Sunrise Summit -->
+<div class="gallery-card md:col-span-6 group relative rounded-xl bg-surface-container-lowest/80 p-space-sm shadow-[0_16px_40px_-10px_rgba(255,179,71,0.12)] hover:shadow-[0_24px_50px_rgba(255,179,71,0.25)] transition-all duration-500 cursor-pointer overflow-hidden" data-category="adventures" data-index="5">
+<div class="relative w-full h-[360px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Epic alpine sunrise viewpoint over jagged mountain clouds, Elena in yellow mountaineering jacket with trekking poles perched on summit boulder overlooking ocean of white dawn fog drenched in amber solar flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRMyf69ovVeocadHGUKDk9CkBt2k8h3i9u1wJVRNJdDuxrY3kESkOvHMd55cK_dEoospbZZGxFk6AWg3j3psdeXafYIJx9NlhW_x0bgFz4BCUyJFIq5vLxLYeGIwo8vggiFWXug6rP2CiiHMvPUTNl5S9OorDfq76hEorFnqb8u_UGeXNZMpcFqtLtaZq0K1WWoTwRrBXj6CIxgbRkW6tV-bjHGBih0KIQ7EEFI4RfMbIXMWt-5Ac8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-85"></div>
+<div class="absolute top-space-md left-space-md px-space-md py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">terrain</span>
+            Mount Rainier Summit
+          </div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<span class="text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest">July 2024</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Above the cloud ocean at 14,000 ft
+            </h2>
+<div class="flex items-center justify-between mt-space-xs">
+<p class="font-body-sm text-body-sm text-outline truncate">"Waking up at 2:30 AM was painful, but this sunrise healed everything."</p>
+<span class="font-label-sm text-label-sm text-primary shrink-0 ml-2">Mark S.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Curator Memory Capsule Invitation Card -->
+<div class="mt-space-2xl p-space-xl rounded-xl bg-surface-container/60 backdrop-blur-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/10 blur-[80px] pointer-events-none"></div>
+<div class="max-w-xl">
+<div class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">add_a_photo</span>
+          Contribute to Elena's Living Archive
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+          Have an unshared snapshot or hidden Polaroid?
+        </h3>
+<p class="font-body-md text-body-md text-outline mt-space-xs">
+          Every memory gifted tonight is instantly rendered into Elena’s permanent digital memorial vault.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-xl py-space-sm rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-[0_0_24px_rgba(255,179,71,0.35)] hover:scale-105 transition-transform flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">upload</span>
+<span>Submit a Memory</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Lightbox Modal System -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-space-md sm:p-space-lg opacity-0 pointer-events-none transition-opacity duration-300 bg-surface-dim/90 backdrop-blur-2xl" id="lightbox-modal" role="dialog">
+<!-- Close Button -->
+<button aria-label="Close Lightbox" class="absolute top-space-md right-space-md z-30 w-12 h-12 rounded-full bg-surface-container-high/80 hover:bg-surface-bright text-on-surface flex items-center justify-center transition-transform hover:rotate-90" id="lightbox-close" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<!-- Prev Photo Control -->
+<button aria-label="Previous Photo" class="absolute left-space-sm sm:left-space-md z-30 w-12 h-12 rounded-full bg-surface-container-high/70 hover:bg-surface-bright text-on-surface flex items-center justify-center transition-transform hover:-translate-x-1" id="lightbox-prev" type="button">
+<span class="material-symbols-outlined text-[28px]">chevron_left</span>
+</button>
+<!-- Next Photo Control -->
+<button aria-label="Next Photo" class="absolute right-space-sm sm:right-space-md z-30 w-12 h-12 rounded-full bg-surface-container-high/70 hover:bg-surface-bright text-on-surface flex items-center justify-center transition-transform hover:translate-x-1" id="lightbox-next" type="button">
+<span class="material-symbols-outlined text-[28px]">chevron_right</span>
+</button>
+<!-- Lightbox Main Frame Container -->
+<div class="relative w-full max-w-5xl h-[870px] flex flex-col justify-between bg-surface-container-lowest/90 rounded-xl overflow-hidden shadow-[0_24px_60px_rgba(0,0,0,0.8)]">
+<!-- Ambient Image Frame with Subtle Vignette -->
+<div class="relative flex-1 w-full overflow-hidden flex items-center justify-center p-space-sm sm:p-space-md">
+<div class="absolute w-[450px] h-[450px] rounded-full bg-primary/15 blur-[120px] pointer-events-none" id="lightbox-glow"></div>
+<img class="relative z-10 max-h-[593px] max-w-full object-contain rounded-lg shadow-[0_12px_40px_rgba(0,0,0,0.6)] transition-all duration-300" data-alt="High dynamic range enlargement of gallery photo displaying intricate celebration details" id="lightbox-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtjtIf3qLHEH5oM5nFWI-HTKASe2RIBOz3B4tOQOn-5WnHqqgnazOWUv1cRqamPXAAdmmALjfcbA-op75kaUK_ZwpsFZdwDklz8JoEJS1_OSJQ2E2ibeMpCA7CQPy1ZrDmeHnrLWudD71oZrf4GV7P1uRJ01tYhdcdHEcVWEyQE9y3dQlP2pl4-_AhasS-ENsMCU5OWqtG2XDEgonD0Aj5Z52QLUH3pJjU4JHjiRQFK9oUAY-f3PPy"/>
+</div>
+<!-- Bottom Caption Pod & Action Ribbon -->
+<div class="relative z-20 w-full bg-surface-container/90 backdrop-blur-xl p-space-md sm:p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Left details -->
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container font-title-lg text-title-lg flex items-center justify-center font-bold shrink-0 shadow-md" id="lightbox-avatar">
+            J
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold" id="lightbox-contributor">Julian M.</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed" id="lightbox-date">Summer 2022</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed" id="lightbox-tag">Amalfi Coast</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-1 max-w-2xl" id="lightbox-caption">
+              "Best summer of our lives. Sea breeze, limoncello, and non-stop acoustic serenades as the sun dipped behind Capri."
+            </p>
+</div>
+</div>
+<!-- Right Action Controls -->
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="flex items-center gap-1.5 px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" id="reaction-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span id="reaction-count">42</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg transition-transform active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">chat_bubble</span>
+<span>Leave Wish</span>
+</button>
+<button aria-label="Download High-Res Keepsake" class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:scale-105 transition-all shadow-[0_0_16px_rgba(255,179,71,0.3)]" id="download-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      // Memory Database
+      const memories = [
+        {
+          title: "Sunset sailing along the emerald cliffs",
+          category: "adventures",
+          location: "Amalfi Coast, Italy",
+          date: "Summer 2022",
+          contributor: "Julian M.",
+          initials: "J",
+          likes: 54,
+          caption: "Best summer of our lives. Sea breeze, limoncello, and non-stop acoustic serenades as the sun dipped behind Capri.",
+          prompt: "Golden hour cinematography shot of Elena laughing on a wooden sailboat deck overlooking the pastel cliffside villas of Amalfi Coast Italy, sunflare casting a luminous amber glow across sea spray and warm windblown hair"
+        },
+        {
+          title: "Frosting everywhere & zero regrets",
+          category: "childhood",
+          location: "Milestone Vault",
+          date: "October 1998",
+          contributor: "Mom",
+          initials: "M",
+          likes: 89,
+          caption: "Elena's 4th birthday! She demanded a bite before we finished singing the song, burying her whole face straight into chocolate butter cream.",
+          prompt: "Nostalgic 1990s color film photograph of a four year old Elena with golden birthday crown and vanilla buttercream frosting completely smeared over her grinning cheeks, warm vintage tungsten indoor lighting and party balloons in background"
+        },
+        {
+          title: "We actually made it through finals",
+          category: "celebrations",
+          location: "Commencement Day",
+          date: "Class of 2017",
+          contributor: "The College Crew",
+          initials: "C",
+          likes: 67,
+          caption: "Four years of 2 a.m. library study pods wrapped up in pure golden glitter and endless graduation tears of triumph.",
+          prompt: "Triumphant cinematic celebration photo of university graduation quad, golden yellow and white confetti explosion falling from above, Elena throwing mortarboard cap into mid-air surrounded by joyful friends in velvet ceremonial robes"
+        },
+        {
+          title: "Tokyo rain run at 1:00 AM",
+          category: "silly",
+          location: "Midnight Shibuya",
+          date: "November 2021",
+          contributor: "Chloe",
+          initials: "C",
+          likes: 41,
+          caption: "Lost without Google maps after taking the wrong subway line, running through rain-slicked Shibuya alleys hunting for hot matcha lattes.",
+          prompt: "Atmospheric neon-lit midnight shot in Shibuya Tokyo during warm gentle rain, reflection of amber and magenta street lamps on wet pavement, Elena holding two steaming paper coffee cups laughing under a clear umbrella with friend"
+        },
+        {
+          title: "The sweet potato pie debate",
+          category: "celebrations",
+          location: "Thanksgiving Hearth",
+          date: "Autumn 2023",
+          contributor: "Aunt Claire",
+          initials: "A",
+          likes: 38,
+          caption: "Elena defending her grandmother's secret nutmeg recipe against all newcomers until the entire table erupted into laughter.",
+          prompt: "Candid intimate family dinner table bathed in soft glowing candlelight and rustic dinner plates, Elena in hearty unrestrained laughter across from her grandmother holding wine glasses in a cozy cedar home"
+        },
+        {
+          title: "Above the cloud ocean at 14,000 ft",
+          category: "adventures",
+          location: "Mount Rainier Summit",
+          date: "July 2024",
+          contributor: "Mark S.",
+          initials: "M",
+          likes: 73,
+          caption: "Waking up at 2:30 AM was painful, but reaching Disappointment Cleaver right as the amber sun broke through cloud layer made us feel invincible.",
+          prompt: "Epic alpine sunrise viewpoint over jagged mountain clouds, Elena in yellow mountaineering jacket with trekking poles perched on summit boulder overlooking ocean of white dawn fog drenched in amber solar flares"
+        }
+      ];
+
+      let currentIndex = 0;
+      let slideshowTimer = null;
+      let isPlayingSlideshow = false;
+
+      const modal = document.getElementById('lightbox-modal');
+      const closeBtn = document.getElementById('lightbox-close');
+      const prevBtn = document.getElementById('lightbox-prev');
+      const nextBtn = document.getElementById('lightbox-next');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const contributorEl = document.getElementById('lightbox-contributor');
+      const dateEl = document.getElementById('lightbox-date');
+      const tagEl = document.getElementById('lightbox-tag');
+      const captionEl = document.getElementById('lightbox-caption');
+      const avatarEl = document.getElementById('lightbox-avatar');
+      const reactionCount = document.getElementById('reaction-count');
+      const reactionBtn = document.getElementById('reaction-btn');
+      const slideshowBtn = document.getElementById('slideshow-btn');
+      const soundBtn = document.getElementById('grid-sound-toggle');
+
+      function openLightbox(index) {
+        currentIndex = index;
+        const item = memories[currentIndex];
+        lightboxImg.src = "placeholder";
+        lightboxImg.setAttribute("data-alt", item.prompt);
+        contributorEl.textContent = item.contributor;
+        dateEl.textContent = item.date;
+        tagEl.textContent = item.location;
+        captionEl.textContent = '"' + item.caption + '"';
+        avatarEl.textContent = item.initials;
+        reactionCount.textContent = item.likes;
+
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100', 'pointer-events-auto');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.classList.remove('opacity-100', 'pointer-events-auto');
+        document.body.style.overflow = '';
+        if (isPlayingSlideshow) {
+          stopSlideshow();
+        }
+      }
+
+      function nextPhoto() {
+        currentIndex = (currentIndex + 1) % memories.length;
+        openLightbox(currentIndex);
+      }
+
+      function prevPhoto() {
+        currentIndex = (currentIndex - 1 + memories.length) % memories.length;
+        openLightbox(currentIndex);
+      }
+
+      function startSlideshow() {
+        isPlayingSlideshow = true;
+        slideshowBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+        slideshowBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: \'FILL\' 1;">pause_circle</span><span>Pause Slideshow</span>';
+        openLightbox(currentIndex);
+        slideshowTimer = setInterval(() => {
+          nextPhoto();
+        }, 4000);
+      }
+
+      function stopSlideshow() {
+        isPlayingSlideshow = false;
+        clearInterval(slideshowTimer);
+        slideshowBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        slideshowBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: \'FILL\' 1;">play_circle</span><span>Start Memories Slideshow</span>';
+      }
+
+      // Grid items click
+      document.querySelectorAll('.gallery-card').forEach((card) => {
+        card.addEventListener('click', () => {
+          const idx = parseInt(card.getAttribute('data-index') || '0', 10);
+          openLightbox(idx);
+        });
+      });
+
+      // Controls click
+      closeBtn.addEventListener('click', closeLightbox);
+      nextBtn.addEventListener('click', nextPhoto);
+      prevBtn.addEventListener('click', prevPhoto);
+
+      // Reaction increment micro-interaction
+      let reacted = false;
+      reactionBtn.addEventListener('click', () => {
+        if (!reacted) {
+          memories[currentIndex].likes += 1;
+          reactionCount.textContent = memories[currentIndex].likes;
+          reacted = true;
+          reactionBtn.classList.add('scale-110');
+          setTimeout(() => reactionBtn.classList.remove('scale-110'), 200);
+        }
+      });
+
+      // Keyboard navigation
+      window.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('pointer-events-none')) {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') nextPhoto();
+          if (e.key === 'ArrowLeft') prevPhoto();
+        }
+      });
+
+      // Slideshow toggle
+      slideshowBtn.addEventListener('click', () => {
+        if (isPlayingSlideshow) {
+          stopSlideshow();
+        } else {
+          startSlideshow();
+        }
+      });
+
+      // Ambient Audio toggle feedback
+      let audioActive = false;
+      soundBtn.addEventListener('click', () => {
+        audioActive = !audioActive;
+        if (audioActive) {
+          soundBtn.classList.add('bg-primary', 'text-on-primary');
+          soundBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">volume_up</span>';
+        } else {
+          soundBtn.classList.remove('bg-primary', 'text-on-primary');
+          soundBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">graphic_eq</span>';
+        }
+      });
+
+      // Filter pills filtering
+      const filterPills = document.querySelectorAll('.filter-pill');
+      const galleryCards = document.querySelectorAll('.gallery-card');
+
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-[0_0_18px_rgba(255,179,71,0.3)]');
+            p.classList.add('text-on-surface-variant', 'bg-surface-container/60');
+          });
+
+          pill.classList.remove('text-on-surface-variant', 'bg-surface-container/60');
+          pill.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold', 'shadow-[0_0_18px_rgba(255,179,71,0.3)]');
+
+          const category = pill.getAttribute('data-category');
+          galleryCards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (category === 'all' || cardCat === category) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+    })();
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 backdrop-blur-2xl"><div class="max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span class="font-title-lg text-title-lg text-primary">Elena's Gala Night</span></div><p class="font-body-sm text-body-sm text-outline">Crafted with pure starlight and celebratory reverence</p></div><div class="flex flex-wrap justify-center items-center gap-space-md sm:gap-space-xl"><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-primary">482</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Warm Wishes</span></div><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-secondary">156</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Archived Memories</span></div><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-tertiary-fixed">24h</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Golden Window</span></div></div><div class="flex flex-col items-center md:items-end gap-space-xs text-outline font-label-sm text-label-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span><span>All Guests Honored</span></div><span>© 2025 Elena &amp; Curators Gala</span></div></div></footer></body></html>

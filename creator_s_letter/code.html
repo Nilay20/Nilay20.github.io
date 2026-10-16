@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-wave{0%,100%{height:4px;}50%{height:18px;}}@keyframes drift-particle{0%{transform:translateY(0px) rotate(0deg);opacity:0.3;}50%{transform:translateY(-18px) rotate(180deg);opacity:0.75;}100%{transform:translateY(0px) rotate(360deg);opacity:0.3;}}.wave-bar-1{animation:pulse-wave 1.1s ease-in-out infinite;}.wave-bar-2{animation:pulse-wave 0.85s ease-in-out infinite 0.15s;}.wave-bar-3{animation:pulse-wave 1.35s ease-in-out infinite 0.3s;}.wave-bar-4{animation:pulse-wave 0.95s ease-in-out infinite 0.45s;}.dust-particle-1{animation:drift-particle 12s ease-in-out infinite;}.dust-particle-2{animation:drift-particle 16s ease-in-out infinite 3s;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#111319","surface-container-lowest":"#0c0e14","outline-variant":"#524535","on-primary-container":"#704700","on-error-container":"#ffdad6","tertiary":"#ffd6b8","error-container":"#93000a","secondary-fixed":"#ffe088","on-secondary-fixed-variant":"#574500","outline":"#9f8e7c","tertiary-fixed":"#ffdcc3","tertiary-fixed-dim":"#ffb77d","surface-container-highest":"#33343c","surface-bright":"#373940","on-tertiary":"#4d2600","on-surface":"#e2e2eb","surface-variant":"#33343c","inverse-surface":"#e2e2eb","background":"#111319","on-secondary-container":"#342800","on-primary-fixed-variant":"#643f00","secondary":"#e9c349","surface-container-high":"#282a31","secondary-fixed-dim":"#e9c349","on-tertiary-fixed":"#2f1500","inverse-on-surface":"#2e3037","surface-container-low":"#191b22","surface-container":"#1d1f26","primary-fixed":"#ffddb6","on-background":"#e2e2eb","surface":"#111319","primary-container":"#ffb347","on-secondary":"#3c2f00","primary-fixed-dim":"#ffb95a","on-secondary-fixed":"#241a00","primary":"#ffd7a9","surface-tint":"#ffb95a","on-surface-variant":"#d6c3b0","on-primary-fixed":"#2a1800","error":"#ffb4ab","tertiary-container":"#ffb171","on-primary":"#462a00","secondary-container":"#af8d11","inverse-primary":"#845400","on-tertiary-container":"#7b4000","on-error":"#690005","on-tertiary-fixed-variant":"#6e3900"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"space-xl":"2.5rem",gutter:"1.5rem","margin-md":"2.5rem","space-lg":"1.5rem",margin:"1.25rem","margin-lg":"4rem","space-2xl":"4rem","gutter-lg":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"title-lg":["Syne"],"label-lg":["Manrope"],"headline-lg":["Syne"],"body-md":["Manrope"],"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"body-sm":["Manrope"],"body-lg":["Manrope"],"display-hero-mobile":["Syne"],"label-sm":["Manrope"],"display-hero":["Syne"],"headline-sm":["Syne"]},fontSize:{"title-lg":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"0.01em",fontWeight:"600"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.05em",fontWeight:"600"}],"headline-lg":["3.25rem",{lineHeight:"3.75rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0.01em",fontWeight:"400"}],"headline-md":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["2.125rem",{lineHeight:"2.5rem",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"400"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0.01em",fontWeight:"400"}],"display-hero-mobile":["2.75rem",{lineHeight:"3rem",letterSpacing:"-0.02em",fontWeight:"800"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.08em",fontWeight:"700"}],"display-hero":["5rem",{lineHeight:"5.25rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-sm":["1.5rem",{lineHeight:"2rem",letterSpacing:"0em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface relative selection:bg-primary-container selection:text-on-primary-container min-h-screen"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[650px] h-[650px] bg-primary/10 rounded-full blur-[140px]"></div><div class="absolute top-1/2 right-10 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[120px]"></div><div class="absolute top-24 left-1/3 w-1.5 h-1.5 rounded-full bg-primary-fixed opacity-70 blur-[0.5px] dust-particle-1"></div><div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-secondary-fixed opacity-60 blur-[0.5px] dust-particle-2"></div><div class="absolute bottom-1/4 left-16 w-1 h-1 rounded-full bg-primary opacity-50"></div><div class="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-tertiary opacity-45"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-dim/80 backdrop-blur-2xl shadow-[0_12px_40px_-10px_rgba(255,179,71,0.08)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high shadow-[0_0_20px_rgba(255,179,71,0.25)]"><span class="font-title-lg text-title-lg text-primary tracking-wider">E&amp;M</span></div><div class="hidden sm:flex flex-col"><span class="font-headline-sm text-body-sm tracking-widest uppercase text-primary">Celebrating Elena</span><span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">Milestone Gala Edition</span></div></div><nav class="hidden xl:flex items-center bg-surface-container/70 backdrop-blur-xl rounded-full p-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-full shadow-[0_0_24px_rgba(255,179,71,0.35)]"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebration" href="#">Celebration</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wish-wall" href="#">Wish Wall</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="memory-gallery" href="#">Memory Gallery</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="creators-letter" href="#">Creator's Letter</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="surprise-gift" href="#">Surprise Gift</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low/90 backdrop-blur-md rounded-full px-space-sm py-1.5 shadow-[0_4px_16px_rgba(0,0,0,0.4)]"><button aria-label="Play or Pause Celebration Soundtrack" class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container hover:scale-105 transition-transform" type="button"><span class="material-symbols-outlined text-[18px]">play_arrow</span></button><div class="flex items-end gap-1 h-5 px-1.5"><span class="w-0.5 bg-primary rounded-full wave-bar-1"></span><span class="w-0.5 bg-primary-fixed rounded-full wave-bar-2"></span><span class="w-0.5 bg-secondary rounded-full wave-bar-3"></span><span class="w-0.5 bg-primary rounded-full wave-bar-4"></span></div><button aria-label="Mute Celebration Audio" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">volume_up</span></button></div><a aria-label="Admin Vault Lock" class="w-9 h-9 rounded-full bg-surface-container/60 hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-primary transition-all" data-path="admin-vault" href="#"><span class="material-symbols-outlined text-[19px]">lock</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(255,179,71,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative z-10 w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Atmospheric Canvas Layer -->
+<div class="relative w-full max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg pb-space-2xl">
+<!-- Top Theatrical Banner / Header Intro -->
+<div class="relative flex flex-col items-center text-center pt-space-xl pb-space-lg max-w-3xl mx-auto">
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high/80 backdrop-blur-xl shadow-[0_0_24px_rgba(255,179,71,0.15)] mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Confidential Collective Keepsake</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed">Oct 24, 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-display-hero text-primary tracking-tight">
+        A Little Letter From Everyone
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-space-sm leading-relaxed">
+        Words penned with profound gratitude from the hearts that cherish you most.
+      </p>
+<!-- Atmospheric Audio Cue & Storytelling Toggle Bar -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-lg w-full">
+<!-- Audio Accompaniment Badge -->
+<div class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-low/90 backdrop-blur-md shadow-md text-secondary">
+<span class="material-symbols-outlined text-[18px]">music_note</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">Best experienced with background piano active ♫</span>
+</div>
+<!-- Mode Toggle Pill -->
+<div class="flex items-center p-1 bg-surface-container-lowest/90 rounded-full shadow-[inset_0_2px_8px_rgba(0,0,0,0.6)]">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold transition-all shadow-[0_0_18px_rgba(255,179,71,0.35)]" id="toggle-typewriter" type="button">
+<span class="material-symbols-outlined text-[18px]">motion_photos_auto</span>
+<span>Watch Words Unfold</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" id="toggle-instant" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Read Full Letter</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Letterstage Velvet & Parchment Chamber -->
+<div class="relative w-full max-w-5xl mx-auto mt-space-md">
+<!-- Bioluminescent Underglow Behind Letter -->
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-4/5 h-96 bg-primary-container/15 rounded-full blur-[110px] pointer-events-none"></div>
+<div class="absolute bottom-0 right-10 w-72 h-72 bg-secondary/10 rounded-full blur-[90px] pointer-events-none"></div>
+<!-- Velvet Desk Surface Backing -->
+<div class="relative rounded-xl bg-surface-container-lowest shadow-[0_30px_90px_-20px_rgba(0,0,0,0.9)] p-space-md sm:p-space-xl lg:p-space-2xl overflow-hidden">
+<!-- Texture Decals & Corner Gold Leaf Accents -->
+<div class="absolute top-4 left-4 w-12 h-12 pointer-events-none opacity-40">
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 48 48">
+<path d="M0 0 L48 0 C24 0 0 24 0 48 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="absolute top-4 right-4 w-12 h-12 pointer-events-none opacity-40 -scale-x-100">
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 48 48">
+<path d="M0 0 L48 0 C24 0 0 24 0 48 Z" fill="currentColor"></path>
+</svg>
+</div>
+<!-- The Parchment Card Centerpiece -->
+<div class="relative rounded-lg bg-surface-container-low/95 backdrop-blur-2xl px-space-lg sm:px-space-xl lg:px-space-2xl py-space-xl shadow-[inset_0_0_80px_rgba(255,179,71,0.06),0_20px_50px_rgba(0,0,0,0.7)]">
+<!-- Wax Seal Insignia ('E') Center-top -->
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-secondary via-primary-container to-tertiary-container shadow-[0_0_30px_rgba(255,179,71,0.6)] cursor-pointer group hover:scale-105 transition-transform" title="Elena's Imperial Seal">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-inner">
+<span class="font-headline-md text-headline-md text-secondary select-none font-bold">E</span>
+</div>
+<div class="absolute -inset-1 rounded-full bg-primary/20 blur-sm group-hover:blur-md transition-all"></div>
+</div>
+<!-- Document Header Metadata -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-space-sm pt-space-xs pb-space-lg gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Archival Entry: Folio № 28</span>
+<span class="font-body-sm text-body-sm text-tertiary-fixed">Origin: Secretly Coordinated Across 7 Cities</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">drafts</span>
+<span class="font-label-lg text-label-lg text-primary font-bold tracking-wider uppercase">Unsealed for Midnight</span>
+</div>
+</div>
+<!-- Letter Body / Interactive Storytelling Canvas -->
+<div class="relative min-h-[460px] text-on-surface">
+<!-- Dynamic typewriter rendered area -->
+<div class="font-body-lg text-body-lg leading-relaxed space-y-space-md tracking-normal selection:bg-secondary-container selection:text-on-secondary-container" id="typewriter-output">
+<!-- Content will be injected/revealed here via script -->
+</div>
+<!-- Glowing Amber Typewriter Cursor -->
+<span class="inline-block w-2.5 h-5 ml-1 bg-primary-container shadow-[0_0_12px_#ffb347] align-middle animate-pulse" id="amber-cursor"></span>
+</div>
+<!-- Digital Margin Script Notes (Floating Hand-written feel) -->
+<div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-start md:items-end justify-between gap-space-lg">
+<div class="max-w-md">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">A Living Testament</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline italic">
+                “You make every room softer, every hard truth bearable, and every small celebration feel like an era.”
+              </p>
+</div>
+<div class="flex flex-col items-start md:items-end">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Written in Unison</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">Your Loyal Circle</span>
+</div>
+</div>
+<!-- Handwritten Signatures Wall (28 Contributors) -->
+<div class="mt-space-xl pt-space-lg bg-surface-container/60 rounded-xl p-space-md sm:p-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[22px]">draw</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The 28 Signatures of Devotion</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded-full bg-surface-container-high text-secondary">
+                28 / 28 Sealed
+              </span>
+</div>
+<!-- Signature Pills Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-space-sm">
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Marcus V.</span>
+<span class="font-label-sm text-[10px] text-outline">Brother &amp; Anchor</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Sofia L.</span>
+<span class="font-label-sm text-[10px] text-outline">Paris, 2012</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">David K.</span>
+<span class="font-label-sm text-[10px] text-outline">Studio Partner</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Amara C.</span>
+<span class="font-label-sm text-[10px] text-outline">Midnight Confidante</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Julian R.</span>
+<span class="font-label-sm text-[10px] text-outline">Architect of Laughs</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Grandma Rose</span>
+<span class="font-label-sm text-[10px] text-outline">Forever Proud</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Mateo P.</span>
+<span class="font-label-sm text-[10px] text-outline">Roadtrip DJ</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Chloë B.</span>
+<span class="font-label-sm text-[10px] text-outline">Sister in Art</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Tariq H.</span>
+<span class="font-label-sm text-[10px] text-outline">Coffee Debater</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Nia &amp; Kai</span>
+<span class="font-label-sm text-[10px] text-outline">The Duo</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Henrik S.</span>
+<span class="font-label-sm text-[10px] text-outline">Berlin Crew</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Dr. Clara Y.</span>
+<span class="font-label-sm text-[10px] text-outline">Mentor &amp; Ally</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Samir G.</span>
+<span class="font-label-sm text-[10px] text-outline">Campfire Instigator</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Zoe &amp; Leo</span>
+<span class="font-label-sm text-[10px] text-outline">Next-door Family</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Beatrice W.</span>
+<span class="font-label-sm text-[10px] text-outline">Book Club Rebel</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Felix N.</span>
+<span class="font-label-sm text-[10px] text-outline">Childhood Scout</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Isla Chen</span>
+<span class="font-label-sm text-[10px] text-outline">Soul Sister</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Oliver M.</span>
+<span class="font-label-sm text-[10px] text-outline">Vinyl Collector</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Aunt Vivienne</span>
+<span class="font-label-sm text-[10px] text-outline">With Hugs</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Luca D.</span>
+<span class="font-label-sm text-[10px] text-outline">Venice Reminiscer</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Sasha E.</span>
+<span class="font-label-sm text-[10px] text-outline">Concert Buddy</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Maya T.</span>
+<span class="font-label-sm text-[10px] text-outline">Design Co-conspirator</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Daphne &amp; Rex</span>
+<span class="font-label-sm text-[10px] text-outline">Tail Waggers</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Rowan J.</span>
+<span class="font-label-sm text-[10px] text-outline">Poetry Reader</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Gabriel F.</span>
+<span class="font-label-sm text-[10px] text-outline">Guitarist</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Uncle Theo</span>
+<span class="font-label-sm text-[10px] text-outline">Storyteller</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Hannah O.</span>
+<span class="font-label-sm text-[10px] text-outline">Marathon Cheerleader</span>
+</div>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm hover:scale-105 transition-transform group">
+<span class="font-title-lg text-body-md text-primary font-bold italic tracking-wide group-hover:text-secondary transition-colors">Kian &amp; Mira</span>
+<span class="font-label-sm text-[10px] text-outline">Forever Grateful</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Celebration Keepsake Action Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md sm:gap-space-lg mt-space-xl">
+<!-- Download Keepsake Action -->
+<button class="w-full sm:w-auto flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-surface-container-high/90 hover:bg-surface-container-highest text-secondary font-label-lg text-label-lg font-bold shadow-[0_4px_24px_rgba(0,0,0,0.5)] hover:shadow-[0_0_24px_rgba(233,195,73,0.3)] transition-all" id="download-keepsake-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Keepsake PDF 📜</span>
+</button>
+<!-- Wish Wall Link Button -->
+<a class="w-full sm:w-auto flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-lg text-label-lg font-bold shadow-[0_0_30px_rgba(255,179,71,0.4)] hover:shadow-[0_0_40px_rgba(255,179,71,0.7)] hover:-translate-y-0.5 transition-all" data-path="wish-wall" href="#">
+<span>Read Everyone's Wishes</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+<!-- Photo Memory Keepsake Vignette Bento Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg max-w-5xl mx-auto mt-space-2xl">
+<!-- Visual Card 1 -->
+<div class="relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl p-space-md flex flex-col gap-space-sm shadow-[0_12px_40px_-10px_rgba(255,179,71,0.08)] group overflow-hidden">
+<div class="w-full h-48 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A vintage black and white photo of a radiant smiling young woman with friends around a festive dinner table illuminated by flickering candlelight, warm golden hues, rich cinematic grain, atmospheric midnight aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCH9VZC5IjLkFjnTGIqxsQXft7eDbAYeJlnDiim52_2AIJu_3knPjmfCYhc5rPp3LqMtOYRoSe4WiSD4K0nD4zQhI2EbsfOhAhXv6k4X7K5n6pmd-r8pJtL69U8IAV6RCSYfwZhyvFhCfHvDrQprcSK-Gv4PeaiMIVTq98jFib_mYwGlkDLWPpWlGWiKsOFs-qDvAio0VkEJH7umtK1mPJgLxB6FFQnGM76gD-LTJkhCxBz_fSSaeV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-dim/80 text-[11px] font-label-sm text-secondary">The Early Chapters</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-primary">Unshakable Kindness</span>
+<p class="font-body-sm text-body-sm text-outline mt-1 leading-snug">Through every high tide and quiet storm, you kept the lanterns glowing for the people beside you.</p>
+</div>
+</div>
+<!-- Visual Card 2 -->
+<div class="relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl p-space-md flex flex-col gap-space-sm shadow-[0_12px_40px_-10px_rgba(255,179,71,0.08)] group overflow-hidden">
+<div class="w-full h-48 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up photograph of an antique fountain pen resting on delicate deckled paper beside pressed golden flowers and amber glowing candlelight in deep dramatic shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwACawRphDg-K7Lin2wAGFpOJS2ggtMmKJkZbDP9SJgZjaz5dv0BVTuGF19v_rItTKkIhCqCZ1HrcnIpAyeytQLtrLN1lVDYKgrsY3Abm5Tg2-D3PkwGqY-xhuqYCugCzt2dtLhB2XgrMzwYsTLdmnU-BwE2NDNhMCCmPplm_upGJ_teJpSGh08RMWigXsBgSccIyjKvS4GAnMlb3l_beb8vGD_VF2zl8odUFErv38E9F4VElLnStW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-dim/80 text-[11px] font-label-sm text-secondary">The Quiet Resilience</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-primary">Grace Under Fire</span>
+<p class="font-body-sm text-body-sm text-outline mt-1 leading-snug">You turned obstacles into poetry and taught an entire circle of people how to stand upright with soft hands.</p>
+</div>
+</div>
+<!-- Visual Card 3 -->
+<div class="relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl p-space-md flex flex-col gap-space-sm shadow-[0_12px_40px_-10px_rgba(255,179,71,0.08)] group overflow-hidden">
+<div class="w-full h-48 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Celebratory champagne flutes clinking against a dramatic midnight gala backdrop with glittering amber bokeh sparkles and warm cinematic illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSHEuFpLdmwR5fWJRteS6lnrYXHCGr6fg-Tr1UB4psgR_S1YwyqKHzMSvlbH6jlrSKyVO5suN3j4a9ZmVEF8Z1zDzMQHkBDh1VC_yiEI43BqK-QvOGBSuUJ9OWt5mZ6CG6-Us5nMBf78HTkhsJxnQRGe2F9ZxfB9sMMT4-lfrc6yVntc4MxQnMnZDvN41iKYJB1LOtYqXOAYd9EspVsSgaZ2h8K2MTB5xJfaLZjrKDsKrSlYsn3Ro1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-dim/80 text-[11px] font-label-sm text-secondary">Infectious Humor</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-primary">The Unfiltered Joy</span>
+<p class="font-body-sm text-body-sm text-outline mt-1 leading-snug">There is no laughter quite as resonant, unashamed, or contagious as the kind that starts in your eyes.</p>
+</div>
+</div>
+</div>
+<!-- Keepsake Modal Simulation Toast (Hidden by default) -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="pdf-toast">
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-high/95 backdrop-blur-2xl shadow-[0_10px_40px_rgba(0,0,0,0.8)] border border-primary/20">
+<span class="material-symbols-outlined text-primary text-[28px] animate-bounce">auto_stories</span>
+<div class="flex flex-col pr-space-md">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Compiling Golden Foil PDF...</span>
+<span class="font-body-sm text-body-sm text-outline">Packaging letter &amp; 28 high-res digital signatures.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initTypewriterStory() {
+    const letterParagraphs = [
+      "Dearest Elena,",
+      "When we started gathering these notes behind your back, we thought we would just collect a handful of sweet words. But what poured in over the last few weeks was an overwhelming flood of love from every chapter of your life—from childhood classrooms and cross-country road trips, to quiet midnight phone calls and high-stakes triumphs.",
+      "If there is one universal truth echoed by every single soul who put their name to this paper, it is your rare, disarming kindness. You give people room to breathe. You listen without checking the clock, you remember the tiny details everyone else forgets, and you make ordinary Tuesday evenings feel like grand occasions.",
+      "We have watched you conquer daunting mountains with fierce resilience and zero vanity. When things crumbled, you quietly picked up the fragments, turned them into mosaics, and showed everyone in your orbit how to stand taller without hardening your heart.",
+      "And then, of course, there is your laughter—wicked, joyful, and utterly contagious. The kind of humor that breaks tension in crowded rooms and turns simple meals into legendary stories we still recount years later.",
+      "Tonight is not merely a milestone on a calendar. It is a mirror held up to your life, reflecting the immense warmth you have poured into every one of us. May you feel the full, magnificent weight of how profoundly you are cherished.",
+      "With every ounce of our hearts,\nAll of Us."
+    ];
+
+    const outputElement = document.getElementById('typewriter-output');
+    const cursor = document.getElementById('amber-cursor');
+    const btnTypewriter = document.getElementById('toggle-typewriter');
+    const btnInstant = document.getElementById('toggle-instant');
+    const pdfBtn = document.getElementById('download-keepsake-btn');
+    const pdfToast = document.getElementById('pdf-toast');
+
+    let isTyping = false;
+    let typeInterval = null;
+
+    // Full plain text representation for typewriter
+    const fullTextBlocks = letterParagraphs;
+
+    function renderInstantly() {
+      if (typeInterval) clearInterval(typeInterval);
+      isTyping = false;
+      outputElement.innerHTML = '';
+      
+      fullTextBlocks.forEach((para, index) => {
+        const p = document.createElement('p');
+        if (index === 0) {
+          p.className = 'font-headline-sm text-headline-sm text-primary font-bold';
+        } else if (index === fullTextBlocks.length - 1) {
+          p.className = 'font-headline-sm text-title-lg text-secondary italic pt-space-sm whitespace-pre-line';
+        } else {
+          p.className = 'text-on-surface/90 text-body-lg leading-relaxed';
+        }
+        p.textContent = para;
+        outputElement.appendChild(p);
+      });
+      cursor.style.display = 'none';
+
+      // Button styles
+      btnInstant.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold transition-all shadow-[0_0_18px_rgba(255,179,71,0.35)]';
+      btnTypewriter.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors';
+    }
+
+    function startTypewriter() {
+      if (typeInterval) clearInterval(typeInterval);
+      isTyping = true;
+      outputElement.innerHTML = '';
+      cursor.style.display = 'inline-block';
+
+      btnTypewriter.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold transition-all shadow-[0_0_18px_rgba(255,179,71,0.35)]';
+      btnInstant.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors';
+
+      let currentParaIndex = 0;
+      let currentCharIndex = 0;
+
+      let currentParagraphEl = document.createElement('p');
+      if (currentParaIndex === 0) {
+        currentParagraphEl.className = 'font-headline-sm text-headline-sm text-primary font-bold';
+      }
+      outputElement.appendChild(currentParagraphEl);
+
+      typeInterval = setInterval(() => {
+        if (currentParaIndex >= fullTextBlocks.length) {
+          clearInterval(typeInterval);
+          isTyping = false;
+          cursor.style.display = 'inline-block';
+          return;
+        }
+
+        const targetString = fullTextBlocks[currentParaIndex];
+        
+        if (currentCharIndex < targetString.length) {
+          currentParagraphEl.textContent += targetString.charAt(currentCharIndex);
+          currentCharIndex++;
+        } else {
+          currentParaIndex++;
+          currentCharIndex = 0;
+          if (currentParaIndex < fullTextBlocks.length) {
+            currentParagraphEl = document.createElement('p');
+            if (currentParaIndex === fullTextBlocks.length - 1) {
+              currentParagraphEl.className = 'font-headline-sm text-title-lg text-secondary italic pt-space-sm whitespace-pre-line';
+            } else {
+              currentParagraphEl.className = 'text-on-surface/90 text-body-lg leading-relaxed';
+            }
+            outputElement.appendChild(currentParagraphEl);
+          }
+        }
+      }, 16);
+    }
+
+    btnTypewriter.addEventListener('click', () => {
+      startTypewriter();
+    });
+
+    btnInstant.addEventListener('click', () => {
+      renderInstantly();
+    });
+
+    // Initial render trigger
+    startTypewriter();
+
+    // PDF Toast simulator
+    if (pdfBtn && pdfToast) {
+      pdfBtn.addEventListener('click', () => {
+        pdfToast.classList.remove('translate-y-32', 'opacity-0');
+        pdfToast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          pdfToast.classList.remove('translate-y-0', 'opacity-100');
+          pdfToast.classList.add('translate-y-32', 'opacity-0');
+        }, 3200);
+      });
+    }
+  })();
+</script></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 backdrop-blur-2xl"><div class="max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span class="font-title-lg text-title-lg text-primary">Elena's Gala Night</span></div><p class="font-body-sm text-body-sm text-outline">Crafted with pure starlight and celebratory reverence</p></div><div class="flex flex-wrap justify-center items-center gap-space-md sm:gap-space-xl"><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-primary">482</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Warm Wishes</span></div><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-secondary">156</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Archived Memories</span></div><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-tertiary-fixed">24h</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Golden Window</span></div></div><div class="flex flex-col items-center md:items-end gap-space-xs text-outline font-label-sm text-label-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span><span>All Guests Honored</span></div><span>© 2025 Elena &amp; Curators Gala</span></div></div></footer></body></html>
