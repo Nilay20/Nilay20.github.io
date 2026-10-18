@@ -1,1 +1,467 @@
-ECHO is on.
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-wave{0%,100%{height:4px;}50%{height:18px;}}@keyframes drift-particle{0%{transform:translateY(0px) rotate(0deg);opacity:0.3;}50%{transform:translateY(-18px) rotate(180deg);opacity:0.75;}100%{transform:translateY(0px) rotate(360deg);opacity:0.3;}}.wave-bar-1{animation:pulse-wave 1.1s ease-in-out infinite;}.wave-bar-2{animation:pulse-wave 0.85s ease-in-out infinite 0.15s;}.wave-bar-3{animation:pulse-wave 1.35s ease-in-out infinite 0.3s;}.wave-bar-4{animation:pulse-wave 0.95s ease-in-out infinite 0.45s;}.dust-particle-1{animation:drift-particle 12s ease-in-out infinite;}.dust-particle-2{animation:drift-particle 16s ease-in-out infinite 3s;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#111319","surface-container-lowest":"#0c0e14","outline-variant":"#524535","on-primary-container":"#704700","on-error-container":"#ffdad6","tertiary":"#ffd6b8","error-container":"#93000a","secondary-fixed":"#ffe088","on-secondary-fixed-variant":"#574500","outline":"#9f8e7c","tertiary-fixed":"#ffdcc3","tertiary-fixed-dim":"#ffb77d","surface-container-highest":"#33343c","surface-bright":"#373940","on-tertiary":"#4d2600","on-surface":"#e2e2eb","surface-variant":"#33343c","inverse-surface":"#e2e2eb","background":"#111319","on-secondary-container":"#342800","on-primary-fixed-variant":"#643f00","secondary":"#e9c349","surface-container-high":"#282a31","secondary-fixed-dim":"#e9c349","on-tertiary-fixed":"#2f1500","inverse-on-surface":"#2e3037","surface-container-low":"#191b22","surface-container":"#1d1f26","primary-fixed":"#ffddb6","on-background":"#e2e2eb","surface":"#111319","primary-container":"#ffb347","on-secondary":"#3c2f00","primary-fixed-dim":"#ffb95a","on-secondary-fixed":"#241a00","primary":"#ffd7a9","surface-tint":"#ffb95a","on-surface-variant":"#d6c3b0","on-primary-fixed":"#2a1800","error":"#ffb4ab","tertiary-container":"#ffb171","on-primary":"#462a00","secondary-container":"#af8d11","inverse-primary":"#845400","on-tertiary-container":"#7b4000","on-error":"#690005","on-tertiary-fixed-variant":"#6e3900"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"space-xl":"2.5rem",gutter:"1.5rem","margin-md":"2.5rem","space-lg":"1.5rem",margin:"1.25rem","margin-lg":"4rem","space-2xl":"4rem","gutter-lg":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"title-lg":["Syne"],"label-lg":["Manrope"],"headline-lg":["Syne"],"body-md":["Manrope"],"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"body-sm":["Manrope"],"body-lg":["Manrope"],"display-hero-mobile":["Syne"],"label-sm":["Manrope"],"display-hero":["Syne"],"headline-sm":["Syne"]},fontSize:{"title-lg":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"0.01em",fontWeight:"600"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.05em",fontWeight:"600"}],"headline-lg":["3.25rem",{lineHeight:"3.75rem",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0.01em",fontWeight:"400"}],"headline-md":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["2.125rem",{lineHeight:"2.5rem",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"400"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0.01em",fontWeight:"400"}],"display-hero-mobile":["2.75rem",{lineHeight:"3rem",letterSpacing:"-0.02em",fontWeight:"800"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.08em",fontWeight:"700"}],"display-hero":["5rem",{lineHeight:"5.25rem",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-sm":["1.5rem",{lineHeight:"2rem",letterSpacing:"0em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface relative selection:bg-primary-container selection:text-on-primary-container min-h-screen"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[650px] h-[650px] bg-primary/10 rounded-full blur-[140px]"></div><div class="absolute top-1/2 right-10 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[120px]"></div><div class="absolute top-24 left-1/3 w-1.5 h-1.5 rounded-full bg-primary-fixed opacity-70 blur-[0.5px] dust-particle-1"></div><div class="absolute top-1/3 right-1/4 w-2 h-2 rounded-full bg-secondary-fixed opacity-60 blur-[0.5px] dust-particle-2"></div><div class="absolute bottom-1/4 left-16 w-1 h-1 rounded-full bg-primary opacity-50"></div><div class="absolute top-2/3 right-1/3 w-1.5 h-1.5 rounded-full bg-tertiary opacity-45"></div></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-dim/80 backdrop-blur-2xl shadow-[0_12px_40px_-10px_rgba(255,179,71,0.08)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-container-high shadow-[0_0_20px_rgba(255,179,71,0.25)]"><span class="font-title-lg text-title-lg text-primary tracking-wider">E&amp;M</span></div><div class="hidden sm:flex flex-col"><span class="font-headline-sm text-body-sm tracking-widest uppercase text-primary">Celebrating Elena</span><span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">Milestone Gala Edition</span></div></div><nav class="hidden xl:flex items-center bg-surface-container/70 backdrop-blur-xl rounded-full p-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-full shadow-[0_0_24px_rgba(255,179,71,0.35)]"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-full shadow-[0_0_24px_rgba(255,179,71,0.35)]" data-path="celebration" href="#">Celebration</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="wish-wall" href="#">Wish Wall</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="memory-gallery" href="#">Memory Gallery</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="creators-letter" href="#">Creator's Letter</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="surprise-gift" href="#">Surprise Gift</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low/90 backdrop-blur-md rounded-full px-space-sm py-1.5 shadow-[0_4px_16px_rgba(0,0,0,0.4)]"><button aria-label="Play or Pause Celebration Soundtrack" class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container hover:scale-105 transition-transform" type="button"><span class="material-symbols-outlined text-[18px]">play_arrow</span></button><div class="flex items-end gap-1 h-5 px-1.5"><span class="w-0.5 bg-primary rounded-full wave-bar-1"></span><span class="w-0.5 bg-primary-fixed rounded-full wave-bar-2"></span><span class="w-0.5 bg-secondary rounded-full wave-bar-3"></span><span class="w-0.5 bg-primary rounded-full wave-bar-4"></span></div><button aria-label="Mute Celebration Audio" class="w-7 h-7 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">volume_up</span></button></div><a aria-label="Admin Vault Lock" class="w-9 h-9 rounded-full bg-surface-container/60 hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-primary transition-all" data-path="admin-vault" href="#"><span class="material-symbols-outlined text-[19px]">lock</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(255,179,71,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative z-10 w-full pt-20 bg-background"><div class="flex flex-col w-full relative">
+<!-- Interactive Particle Confetti Canvas -->
+<canvas class="fixed inset-0 pointer-events-none z-50 w-full h-full" id="gala-confetti-canvas"></canvas>
+<!-- Ambient Light Orbs -->
+<div class="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-primary/10 rounded-full blur-[160px] -z-10"></div>
+<div class="pointer-events-none absolute top-[600px] right-4 w-[600px] h-[600px] bg-secondary-container/15 rounded-full blur-[140px] -z-10"></div>
+<!-- STAGE 1: CINEMATIC INVITATION PROLOGUE -->
+<section class="w-full min-h-[870px] flex flex-col items-center justify-center px-gutter lg:px-gutter-lg relative transition-all duration-1000 ease-out py-space-xl" id="prologue-stage">
+<div class="max-w-[940px] w-full flex flex-col items-center text-center relative z-10">
+<!-- Overline VIP Medallion Badge -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container/70 backdrop-blur-xl shadow-lg mb-space-lg">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase">Private Milestone Commemoration</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Invitation No. 0824</span>
+</div>
+<!-- Shimmering Serif Theatrical Intro -->
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero text-primary tracking-tight leading-[1.08] mb-space-md">
+        Someone very special deserves something <span class="text-secondary italic">unforgettable.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[640px] mb-space-xl">
+        Let’s make her birthday magical — together. An intimate celebration orchestrated in starlight, song, and global affection.
+      </p>
+<!-- Pulsating Interactive Golden Gateway Trigger -->
+<div class="relative group">
+<div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-primary-container via-secondary to-primary opacity-60 blur-lg group-hover:opacity-100 transition-all duration-500 animate-pulse"></div>
+<button class="relative flex items-center gap-space-md px-space-xl py-5 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary-container font-headline-sm text-title-lg shadow-[0_10px_35px_rgba(255,179,71,0.45)] hover:scale-105 active:scale-95 transition-all duration-300" id="trigger-reveal-btn" type="button">
+<span>Enter the Celebration</span>
+<span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span>
+</button>
+</div>
+<!-- Hint Caption -->
+<div class="flex items-center gap-space-xs mt-space-lg text-outline">
+<span class="material-symbols-outlined text-[16px] text-primary">touch_app</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Tap to ignite the gala sequence</span>
+</div>
+<!-- Ambient Audio Teaser Pill -->
+<div class="mt-space-2xl inline-flex items-center gap-space-md px-space-lg py-space-sm rounded-full bg-surface-container-low/80 backdrop-blur-md shadow-md">
+<span class="material-symbols-outlined text-primary text-[20px]">music_note</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Now Playing: <strong class="text-on-surface font-semibold">Clair de Lune</strong> (Acoustic Celebration Piano)</span>
+<span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-outline">Activate in header</span>
+</div>
+</div>
+</section>
+<!-- STAGE 2: THE FULL CELEBRATION REVEAL (Hidden by default, unrolls smoothly) -->
+<section class="hidden opacity-0 translate-y-12 transition-all duration-1000 ease-out w-full max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg pb-space-2xl" id="reveal-stage">
+<!-- Hero Banner with Holographic Gilded Glow -->
+<div class="w-full relative rounded-xl overflow-hidden bg-gradient-to-b from-surface-container to-surface-container-lowest p-space-lg lg:p-space-2xl shadow-[0_24px_80px_rgba(255,179,71,0.12)] mb-space-xl">
+<div class="absolute -top-32 right-12 w-[500px] h-[500px] bg-primary-container/15 rounded-full blur-[130px] pointer-events-none"></div>
+<div class="absolute bottom-0 left-10 w-[400px] h-[350px] bg-secondary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Top Row Utilities -->
+<div class="flex flex-wrap items-center justify-between gap-space-md relative z-10 mb-space-xl">
+<div class="inline-flex items-center gap-space-sm bg-surface-container-high/90 px-space-md py-space-xs rounded-full shadow-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Elena's Golden Jubilee Edition</span>
+</div>
+<!-- Confetti Cannon Button -->
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-surface-bright/80 hover:bg-surface-bright text-on-surface hover:text-primary transition-all duration-300 shadow-md active:scale-95 group" id="throw-confetti-btn" type="button">
+<span class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">celebration</span>
+<span class="font-label-lg text-label-lg">Throw Confetti 🎉</span>
+</button>
+</div>
+<!-- The Grand Name Reveal -->
+<div class="max-w-[1000px] relative z-10">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">Honoring</span>
+<span class="w-12 h-px bg-secondary"></span>
+</div>
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero text-primary font-extrabold tracking-tight leading-none mb-space-md drop-shadow-[0_8px_30px_rgba(255,179,71,0.3)]">
+          Happy Birthday, <span class="bg-gradient-to-r from-primary via-secondary-fixed to-primary-container bg-clip-text text-transparent">Elena!</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[760px] leading-relaxed">
+          A collective tribute of love, cherished memories, and laughter gathered from across the world. Tonight, your legacy of kindness lights up our universe.
+        </p>
+</div>
+<!-- Quick Action Dual Buttons + Milestone Pill -->
+<div class="mt-space-xl flex flex-wrap items-center gap-space-md relative z-10">
+<a class="flex items-center gap-space-sm px-space-xl py-4 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_0_24px_rgba(255,179,71,0.35)] hover:scale-105 active:scale-95 transition-all" href="#guestbook-scroll">
+<span>Explore the Wishes</span>
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</a>
+<button class="flex items-center gap-space-sm px-space-xl py-4 rounded-full bg-surface-container-high/90 hover:bg-surface-bright text-primary font-label-lg text-label-lg font-bold shadow-md hover:scale-105 active:scale-95 transition-all" id="open-love-drawer-btn" type="button">
+<span class="material-symbols-outlined text-error text-[20px]">favorite</span>
+<span>Leave Your Love ❤️</span>
+</button>
+<!-- Live Contribution Counter Badge -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest/80 backdrop-blur-xl px-space-lg py-3 rounded-full shadow-inner ml-auto">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-8 w-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold font-label-sm text-label-sm ring-2 ring-surface">S</div>
+<div class="inline-block h-8 w-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold font-label-sm text-label-sm ring-2 ring-surface">M</div>
+<div class="inline-block h-8 w-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold font-label-sm text-label-sm ring-2 ring-surface">L</div>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-body-md text-primary font-bold">48 Wishes &amp; 112 Memories</span>
+<span class="font-label-sm text-label-sm text-outline">Shared across 14 timezones</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BENTO GRID: CELEBRATION METRICS & GALA CLOCK -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-xl">
+<!-- Celebration Countdown & Clock Module (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container rounded-xl p-space-lg lg:p-space-xl flex flex-col justify-between relative overflow-hidden shadow-lg">
+<div class="absolute -right-16 -bottom-16 w-64 h-64 bg-primary/10 rounded-full blur-[80px]"></div>
+<div class="flex items-center justify-between mb-space-lg relative z-10">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">hourglass_top</span>
+<span class="font-headline-sm text-title-lg text-on-surface">Milestone Celebration Clock</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary uppercase tracking-widest">Live Sync</span>
+</div>
+<!-- Dynamic Clock Digits Grid -->
+<div class="grid grid-cols-4 gap-space-sm sm:gap-space-md my-space-md relative z-10 text-center">
+<div class="flex flex-col items-center bg-surface-container-low/90 rounded-lg p-space-md shadow-md">
+<span class="font-headline-lg text-headline-md sm:text-headline-lg text-primary font-extrabold tracking-tighter" id="clock-days">00</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mt-1">Days</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low/90 rounded-lg p-space-md shadow-md">
+<span class="font-headline-lg text-headline-md sm:text-headline-lg text-secondary font-extrabold tracking-tighter" id="clock-hours">14</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mt-1">Hours</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low/90 rounded-lg p-space-md shadow-md">
+<span class="font-headline-lg text-headline-md sm:text-headline-lg text-primary-fixed font-extrabold tracking-tighter" id="clock-minutes">38</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mt-1">Minutes</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low/90 rounded-lg p-space-md shadow-md">
+<span class="font-headline-lg text-headline-md sm:text-headline-lg text-secondary-fixed font-extrabold tracking-tighter" id="clock-seconds">42</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mt-1">Seconds</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm relative z-10 pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Gala window remains open for 48 golden hours</span>
+</div>
+<span class="text-primary font-semibold">Peak Celebration Active</span>
+</div>
+</div>
+<!-- Quick Tribute Status / Aura Pod (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container rounded-xl p-space-lg lg:p-space-xl flex flex-col justify-between shadow-lg relative overflow-hidden">
+<div class="absolute -left-12 -top-12 w-48 h-48 bg-secondary/10 rounded-full blur-[70px]"></div>
+<div class="flex items-center justify-between mb-space-md relative z-10">
+<span class="font-headline-sm text-title-lg text-on-surface">Elena's Birthday Aura</span>
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">all_inclusive</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10 mb-space-md">
+          “Her presence turns ordinary rooms into sanctuaries of warmth, uninhibited creativity, and profound empathy.”
+        </p>
+<!-- Progress Sparkline Visualization -->
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface">Global Warmth Wave</span>
+<span class="text-primary font-bold">96% of goal unlocked</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-low overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary to-primary-container w-[96%] transition-all duration-1000 shadow-[0_0_12px_rgba(255,179,71,0.5)]"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-md mt-space-md pt-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-title-lg text-primary font-bold">14,280</span>
+<span class="font-label-sm text-label-sm text-outline">Smiles Sparked</span>
+</div>
+<div class="w-px h-8 bg-surface-bright"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-title-lg text-secondary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-outline">Pure Affection</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FEATURED QUOTE PREVIEWS & POLAROID CAROUSEL -->
+<div class="w-full mt-space-xl" id="guestbook-scroll">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">loyalty</span>
+<span>Voices of Affection</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Featured Love Notes &amp; Snapshots</h3>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Previous note" class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-bright flex items-center justify-center text-on-surface hover:text-primary transition-all" id="carousel-prev" type="button">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button aria-label="Next note" class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-bright flex items-center justify-center text-on-surface hover:text-primary transition-all" id="carousel-next" type="button">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 3 Polaroid Quote Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="quotes-wrapper">
+<!-- Polaroid Card 1 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:-translate-y-1.5 transition-transform duration-300 group">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden mb-space-md bg-surface-container-low shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A candid artistic golden hour portrait of Elena laughing warmly in a cashmere sweater with friends at an outdoor summer villa gathering, surrounded by soft glowing bokeh, film camera aesthetic, rich amber tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhAy-6M991og3PcWCf3v57pz-bTUCS41xpUjwXh5DQRx42wM2r8z0mD7iZJb6YFrr-tTeFaWkiAGCz1ymciJlFovLY9xFi_P67NHL9CXuvOZfkcXpWT7Uo2xoUPiW9nu2zMoxMBnKYeju7gM2vnML-dPEEL998Mfglz0AjbG7OFq8ALJWF6JNJktNev8xLm7VDwY0wif1peHsiXO2PxRXvtfwzhLwi22dbaWsRDdkxtPH0XfVOCQil"/>
+<div class="absolute bottom-3 left-3 bg-surface-dim/80 backdrop-blur-md px-space-sm py-1 rounded-full text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>Lake Como, 2023</span>
+</div>
+</div>
+<div>
+<span class="material-symbols-outlined text-secondary text-[28px] opacity-70">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-space-md">
+              “Elena has this uncanny gift of making every soul she meets feel like the most treasured protagonist in the room. Happy Birthday to our radiant light!”
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-body-sm flex items-center justify-center font-bold">M</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-body-sm text-on-surface font-semibold">Maya Lin</span>
+<span class="font-label-sm text-label-sm text-outline">Lifelong Confidante</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-error text-[18px]">favorite</span>
+</div>
+</div>
+<!-- Polaroid Card 2 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:-translate-y-1.5 transition-transform duration-300 group">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden mb-space-md bg-surface-container-low shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vintage black and white photograph with subtle champagne gold tinting showing Elena celebrating a milestone architecture award ceremony, champagne glasses clinking, elegant evening attire, cinematic mood lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAo-X8l2ytv86NC-noMmEwMFyZW9JGX58TTZDmpzEylTojHQ-y4mzKY8N-1zMhrDBDQ8EO13-0n4qcx2ESq9qiFKZz-0WmCB4Lv2_MgYAZjJ8C78LViJEiik7Wx9zkndOjb13L_K_bczgZDZpVUeXBFNKWtZ82s4TX24j3gApMdQfX8jWH0TU1eNsN452lu5V9RNl43lDGg3mQsx_SSc4SP6Vm6LQUdBmQvjIlgm7sPoM_QsrIq8Z0"/>
+<div class="absolute bottom-3 left-3 bg-surface-dim/80 backdrop-blur-md px-space-sm py-1 rounded-full text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>Kyoto Biennale, 2024</span>
+</div>
+</div>
+<div>
+<span class="material-symbols-outlined text-secondary text-[28px] opacity-70">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-space-md">
+              “To the sister who taught me that kindness is the fiercest power in this world. Watching you conquer mountains with grace inspires me every single day.”
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary font-headline-sm text-body-sm flex items-center justify-center font-bold">J</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-body-sm text-on-surface font-semibold">Julian Vance</span>
+<span class="font-label-sm text-label-sm text-outline">Brother &amp; Partner</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-error text-[18px]">favorite</span>
+</div>
+</div>
+<!-- Polaroid Card 3 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:-translate-y-1.5 transition-transform duration-300 group">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden mb-space-md bg-surface-container-low shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A cozy candid shot of Elena sipping spiced tea beside a sunlit bay window overflowing with houseplants and travel journals, gentle warm sunbeams striking her smile, cinematic high-fashion documentary portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNKdaYSs809esIs9OqwNhPGvW1cTIjshGt-Hz8e1lDURkOEIKTjac1P1z2y6uUMuuU1Z8N695Me8iebx0dK8IjVQFzOHBuY3mFq0GHgQuYg6Mlu_1i_8_MFjknPnsnMrLpROz6OpwxotqT0ZbsPsklEdJWZltS68gTv-FvKkD3MTwgZZZE6Ey6o1d9_PXKI_CaKoBvS8eqGQLsXK5920HYnZY3nNtq32V3gfOF0UlOkloCErM6wb2c"/>
+<div class="absolute bottom-3 left-3 bg-surface-dim/80 backdrop-blur-md px-space-sm py-1 rounded-full text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>Studio Mornings, 2025</span>
+</div>
+</div>
+<div>
+<span class="material-symbols-outlined text-secondary text-[28px] opacity-70">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-space-md">
+              “Happy Birthday Elena! Thank you for the spontaneous laughter, the midnight philosophies, and the unyielding loyalty. The universe is lucky to have you.”
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary-container font-headline-sm text-body-sm flex items-center justify-center font-bold">C</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-body-sm text-on-surface font-semibold">Clara &amp; Devon</span>
+<span class="font-label-sm text-label-sm text-outline">The Creative Circle</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-error text-[18px]">favorite</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CONTRIBUTION DRAWER / POPUP MODAL (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-dim/85 backdrop-blur-2xl hidden items-center justify-center p-gutter" id="contribution-modal">
+<div class="bg-surface-container max-w-[620px] w-full rounded-xl p-space-lg lg:p-space-xl shadow-[0_20px_70px_rgba(0,0,0,0.8)] relative">
+<button aria-label="Close message window" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span>Eternal Capsule</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Write to Elena</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+          Your personal note and wishes will be etched into Elena's handcrafted leatherbound gala archive.
+        </p>
+<form class="flex flex-col gap-space-md" id="tribute-form">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider" for="contributor-name">Your Name or Moniker</label>
+<input class="w-full h-12 rounded-full bg-surface-container-low px-space-md font-body-md text-on-surface placeholder:text-outline/60 focus:outline-none focus:ring-2 focus:ring-primary" id="contributor-name" placeholder="e.g. Sophia &amp; The Architecture Guild" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider" for="contributor-message">Your Birthday Wish</label>
+<textarea class="w-full rounded-lg bg-surface-container-low p-space-md font-body-md text-on-surface placeholder:text-outline/60 focus:outline-none focus:ring-2 focus:ring-primary resize-none" id="contributor-message" placeholder="Share your favorite memory, a blessing, or a heartfelt wish..." rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock</span>
+<span>Encrypted celebration vault</span>
+</div>
+<button class="px-space-xl py-3 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary-container font-label-lg text-label-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all" type="submit">
+              Send Birthday Love ✨
+            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Client-Side Theatrical Logic -->
+<script>
+    (function initGalaExperience() {
+      const prologueStage = document.getElementById('prologue-stage');
+      const revealStage = document.getElementById('reveal-stage');
+      const triggerBtn = document.getElementById('trigger-reveal-btn');
+      const confettiBtn = document.getElementById('throw-confetti-btn');
+      const modalBtn = document.getElementById('open-love-drawer-btn');
+      const closeModalBtn = document.getElementById('close-modal-btn');
+      const modal = document.getElementById('contribution-modal');
+      const tributeForm = document.getElementById('tribute-form');
+
+      // 1. Confetti Ribbon Physics Engine (Vanilla JS Canvas)
+      const canvas = document.getElementById('gala-confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      let confettiPieces = [];
+      let animationFrameId = null;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      const GALA_COLORS = ['#FFD7A9', '#FFB347', '#E9C349', '#FFE088', '#FFB171', '#FFFFFF'];
+
+      class RibbonConfetti {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * canvas.width;
+          this.y = -30 - Math.random() * 50;
+          this.size = Math.random() * 9 + 5;
+          this.speedY = Math.random() * 3 + 2.5;
+          this.speedX = (Math.random() - 0.5) * 3;
+          this.rotation = Math.random() * 360;
+          this.rotationSpeed = (Math.random() - 0.5) * 8;
+          this.color = GALA_COLORS[Math.floor(Math.random() * GALA_COLORS.length)];
+          this.opacity = 1;
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX + Math.sin(this.y * 0.02) * 1.2;
+          this.rotation += this.rotationSpeed;
+          if (this.y > canvas.height + 40) {
+            this.opacity -= 0.05;
+          }
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.fillStyle = this.color;
+          ctx.globalAlpha = Math.max(0, this.opacity);
+          ctx.shadowColor = 'rgba(255, 179, 71, 0.4)';
+          ctx.shadowBlur = 8;
+          ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size * 0.45);
+          ctx.restore();
+        }
+      }
+
+      function launchConfetti(burstAmount = 85) {
+        for (let i = 0; i < burstAmount; i++) {
+          confettiPieces.push(new RibbonConfetti());
+        }
+        if (!animationFrameId) {
+          renderConfetti();
+        }
+      }
+
+      function renderConfetti() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confettiPieces.forEach((piece) => piece.update());
+        confettiPieces.forEach((piece) => piece.draw());
+        confettiPieces = confettiPieces.filter((p) => p.opacity > 0 && p.y <= canvas.height + 60);
+
+        if (confettiPieces.length > 0) {
+          animationFrameId = requestAnimationFrame(renderConfetti);
+        } else {
+          cancelAnimationFrame(animationFrameId);
+          animationFrameId = null;
+        }
+      }
+
+      // 2. Theatrical Reveal Trigger Transition
+      triggerBtn.addEventListener('click', () => {
+        // Fade prologue slightly
+        prologueStage.classList.add('opacity-0', 'scale-95');
+        setTimeout(() => {
+          prologueStage.classList.add('hidden');
+          revealStage.classList.remove('hidden');
+          setTimeout(() => {
+            revealStage.classList.remove('opacity-0', 'translate-y-12');
+            revealStage.classList.add('opacity-100', 'translate-y-0');
+            launchConfetti(140);
+          }, 60);
+        }, 500);
+      });
+
+      confettiBtn.addEventListener('click', () => launchConfetti(90));
+
+      // 3. Milestone Live Countdown Clock simulation
+      let seconds = 42;
+      let minutes = 38;
+      let hours = 14;
+      const secEl = document.getElementById('clock-seconds');
+      const minEl = document.getElementById('clock-minutes');
+      const hourEl = document.getElementById('clock-hours');
+
+      setInterval(() => {
+        seconds++;
+        if (seconds >= 60) {
+          seconds = 0;
+          minutes++;
+          if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+          }
+        }
+        if (secEl) secEl.innerText = seconds < 10 ? '0' + seconds : seconds;
+        if (minEl) minEl.innerText = minutes < 10 ? '0' + minutes : minutes;
+        if (hourEl) hourEl.innerText = hours < 10 ? '0' + hours : hours;
+      }, 1000);
+
+      // 4. Modal Drawer Controls
+      modalBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+
+      tributeForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        launchConfetti(100);
+      });
+    })();
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface-container-lowest/90 backdrop-blur-2xl"><div class="max-w-[1440px] mx-auto px-gutter lg:px-gutter-lg py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span class="font-title-lg text-title-lg text-primary">Elena's Gala Night</span></div><p class="font-body-sm text-body-sm text-outline">Crafted with pure starlight and celebratory reverence</p></div><div class="flex flex-wrap justify-center items-center gap-space-md sm:gap-space-xl"><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-primary">482</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Warm Wishes</span></div><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-secondary">156</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Archived Memories</span></div><div class="flex flex-col items-center bg-surface-container-low/60 rounded-xl px-space-md py-space-sm backdrop-blur-md"><span class="font-headline-sm text-title-lg text-tertiary-fixed">24h</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Golden Window</span></div></div><div class="flex flex-col items-center md:items-end gap-space-xs text-outline font-label-sm text-label-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span><span>All Guests Honored</span></div><span>© 2025 Elena &amp; Curators Gala</span></div></div></footer></body></html>
